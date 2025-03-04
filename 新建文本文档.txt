@@ -1,0 +1,40 @@
+trading-signal-scorer/
+│
+├── README.md                    # 项目介绍文档
+├── LICENSE                      # 开源许可证文件
+├── requirements.txt             # 项目依赖列表
+├── setup.py                     # 安装脚本
+│
+├── src/                         # 源代码目录
+│   ├── __init__.py
+│   ├── scorer/                  # 核心评分系统
+│   │   ├── __init__.py
+│   │   ├── buy_signal_scorer.py # 买入信号评分类
+│   │   └── indicators.py        # 技术指标计算模块
+│   │
+│   ├── data/                    # 数据处理相关
+│   │   ├── __init__.py
+│   │   ├── data_loader.py       # 数据加载模块
+│   │   └── data_processor.py    # 数据预处理模块
+│   │
+│   └── visualization/           # 可视化模块
+│       ├── __init__.py
+│       └── plot_utils.py        # 绘图工具
+│
+├── examples/                    # 使用示例
+│   ├── basic_usage.py           # 基本使用示例
+│   ├── backtest_example.py      # 回测示例
+│   └── realtime_scoring.py      # 实时评分示例
+│
+├── tests/                       # 测试目录
+│   ├── __init__.py
+│   ├── test_scorer.py           # 评分系统测试
+│   └── test_indicators.py       # 指标计算测试
+│
+└── docs/                        # 文档目录
+    ├── index.md                 # 文档主页
+    ├── installation.md          # 安装指南
+    ├── quickstart.md            # 快速入门
+    ├── scoring_system.md        # 评分系统详解
+    └── api/                     # API文档
+        └── scorer.md            # 评分器API文档
